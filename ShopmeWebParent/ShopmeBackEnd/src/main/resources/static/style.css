@@ -1,0 +1,72 @@
+.users-table {
+    text-align: center
+}
+.users-table-body{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.users-create-user{
+    display: inline-block;
+    position: relative;
+    font-size: 19px;
+    font-weight: 700;
+}
+.users-create-user:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 47%; top: -69%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(230,246,255,0.96); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 12px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    opacity: 1;
+    transition: 1s;
+}
+.users-table-body .cell{
+
+    position: relative;
+}
+.users-table-body-edit:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 8%; top: -39%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(230,246,255,0.96); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 13px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    opacity: 1;
+    transition: 1s;
+    font-weight: 600;
+}
+.users-table-body-delete:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 53%; top: -39%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(230,246,255,0.96); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 13px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    opacity: 1;
+    transition: 1s;
+    font-weight: 600;
+}
+.users-table-body-enable:hover::after{
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: -115%; top: -35%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(230,246,255,0.96); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 13px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    opacity: 1;
+    transition: 1s;
+    font-weight: 600;
+}
